@@ -1,4 +1,4 @@
-export function populateCard(data){
+export default function populateCard(data){
     data.formulas.forEach(formula => {
         const card = document.createElement('div');
         card.classList.add('formula__card');
