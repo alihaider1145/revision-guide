@@ -1,0 +1,84 @@
+{
+  "chapter": "8. Waves",
+  "formulas": [
+    {
+      "formula_math": "v = f \\lambda",
+      "formula_english": "Wave speed equals frequency times wavelength."
+    },
+    {
+      "formula_math": "f = \\frac{1}{T}",
+      "formula_english": "Frequency–period relation."
+    },
+    {
+      "formula_math": "y(x,t) = Y \\sin(kx - \\omega t)",
+      "formula_english": "General wave equation for a traveling wave.",
+      "variants": [
+        "k = \\frac{2\\pi}{\\lambda}",
+        "\\omega = 2\\pi f"
+      ]
+    },
+    {
+      "formula_math": "k = \\frac{2\\pi}{\\lambda}",
+      "formula_english": "Wave number."
+    },
+    {
+      "formula_math": "\\omega = 2 \\pi f",
+      "formula_english": "Angular frequency."
+    },
+    {
+      "formula_math": "v = \\frac{\\omega}{k}",
+      "formula_english": "Relationship between phase speed, angular frequency, and wave number."
+    },
+    {
+      "formula_math": "v = \\sqrt{\\frac{F}{\\mu}}",
+      "formula_english": "Speed of a wave on a stretched string."
+    },
+    {
+      "formula_math": "I = \\frac{P}{A}",
+      "formula_english": "Wave intensity equals power per unit area."
+    },
+    {
+      "formula_math": "I \\propto \\frac{1}{r^2}",
+      "formula_english": "Inverse square law for wave intensity spreading in 3D."
+    },
+    {
+      "formula_math": "y = Y_1 \\sin(kx - \\omega t) + Y_2 \\sin(kx - \\omega t)",
+      "formula_english": "Principle of superposition.",
+      "variants": [
+        "Resultant amplitude depends on phase difference."
+      ]
+    },
+    {
+      "formula_math": "Y_{resultant} = 2Y \\cos\\left(\\frac{\\Delta \\phi}{2}\\right)",
+      "formula_english": "Resultant amplitude of two interfering waves."
+    },
+    {
+      "formula_math": "v = \\sqrt{\\frac{B}{\\rho}}",
+      "formula_english": "Speed of a longitudinal wave in a medium (bulk modulus form)."
+    },
+    {
+      "formula_math": "E = I A t",
+      "formula_english": "Energy transported by a wave."
+    },
+    {
+      "formula_math": "f_{beat} = |f_1 - f_2|",
+      "formula_english": "Beat frequency."
+    },
+    {
+      "formula_math": "f_n = n \\left( \\frac{v}{2L} \\right)",
+      "formula_english": "Harmonics for a string fixed at both ends."
+    },
+    {
+      "formula_math": "f_n = n \\left( \\frac{v}{4L} \\right)",
+      "formula_english": "Harmonics for a pipe closed at one end."
+    },
+    {
+      "formula_math": "Z = \\rho v",
+      "formula_english": "Acoustic impedance of a medium."
+    },
+    {
+      "formula_math": "a = \\left( \\frac{Z_2 - Z_1}{Z_1 + Z_2} \\right)^2",
+      "formula_english": "Reflection coefficient at boundary of two media."
+    }
+  ]
+}
