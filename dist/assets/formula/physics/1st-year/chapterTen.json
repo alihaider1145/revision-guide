@@ -1,0 +1,73 @@
+{
+  "chapter": "10. Thermodynamics",
+  "formulas": [
+    {
+      "formula_math": "U = \\frac{3}{2} N k T",
+      "formula_english": "Internal energy of an ideal monoatomic gas."
+    },
+    {
+      "formula_math": "\\Delta U = Q - W",
+      "formula_english": "First law of thermodynamics."
+    },
+
+    {
+      "formula_math": "W = P \\Delta V",
+      "formula_english": "Work done by a gas in an isobaric process."
+    },
+    {
+      "formula_math": "W = 0",
+      "formula_english": "Work done in an isochoric process."
+    },
+    {
+      "formula_math": "Q = W",
+      "formula_english": "Isothermal process (ΔU = 0)."
+    },
+    {
+      "formula_math": "Q = 0",
+      "formula_english": "Adiabatic process (ΔU = −W)."
+    },
+
+    {
+      "formula_math": "Eff = \\frac{W}{Q_h}",
+      "formula_english": "Efficiency of a heat engine."
+    },
+    {
+      "formula_math": "Eff = 1 - \\frac{Q_c}{Q_h}",
+      "formula_english": "Alternative efficiency form using heat rejected."
+    },
+    {
+      "formula_math": "Eff_C = 1 - \\frac{T_c}{T_h}",
+      "formula_english": "Carnot engine efficiency."
+    },
+
+    {
+      "formula_math": "COP_{hp} = \\frac{Q_h}{W}",
+      "formula_english": "Coefficient of performance for a heat pump."
+    },
+    {
+      "formula_math": "COP_{ref} = \\frac{Q_c}{W}",
+      "formula_english": "Coefficient of performance for a refrigerator.",
+      "variants": [
+        "COP_{ref} = COP_{hp} - 1"
+      ]
+    },
+
+    {
+      "formula_math": "\\Delta S = \\frac{Q}{T}",
+      "formula_english": "Entropy change in a reversible process."
+    },
+    {
+      "formula_math": "\\Delta S_{total} = \\frac{Q_h}{T_h} + \\frac{Q_c}{T_c}",
+      "formula_english": "Total entropy change for a cyclic process."
+    },
+    {
+      "formula_math": "W_{unavailable} = \\Delta S \\cdot T_0",
+      "formula_english": "Unavailable energy due to entropy production."
+    },
+
+    {
+      "formula_math": "S = k \\ln W",
+      "formula_english": "Boltzmann entropy formula."
+    }
+  ]
+}

@@ -89,7 +89,7 @@ body{
 -------------------- */
 
 .subject{
-    width: 50vw;
+    width: 80vw;
     min-width: 410px;
     margin: 0 auto;
 }
@@ -105,7 +105,7 @@ body{
 .topic{
     background-color: var(--button-color);
     border-radius: 8px;
-    width: 50vw;
+    width: 80vw;
     min-width: 410px;
     margin: 0 auto;
 }
@@ -114,14 +114,25 @@ body{
 ------------formulas
 -------------------- */
 
+.formula{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(auto-fill, minmax(100px, 1fr));
+    gap: 32px;
+    width: 80vw;
+    min-width: 410px;
+    margin: 32px auto;
+}
+
 .formula__card{
-    margin: 16px auto;
     background-color: var(--card-color);
+    overflow-y: hidden;
+    overflow-x: auto;
     border-radius: 8px;
     padding: 16px;
-    width: 50vw;
-    min-width: 410px;
+    width: calc((80vw - 32px)/2);
     font-size: 1.6rem;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .card__eng{

@@ -1,0 +1,53 @@
+{
+  "chapter": "12. Current Electricity",
+  "formulas": [
+    {
+      "formula_math": "I = \\frac{\\Delta Q}{\\Delta t}",
+      "formula_english": "Electric current as rate of flow of charge."
+    },
+    {
+      "formula_math": "I = n q A v_d",
+      "formula_english": "Current in terms of charge density, drift velocity, and cross-sectional area."
+    },
+    {
+      "formula_math": "V = I R",
+      "formula_english": "Ohm’s law (voltage across a resistor)."
+    },
+    {
+      "formula_math": "R = \\rho \\frac{L}{A}",
+      "formula_english": "Resistance of a conductor."
+    },
+    {
+      "formula_math": "\\rho = \\rho_0 (1 + \\alpha \\Delta T)",
+      "formula_english": "Temperature dependence of resistivity."
+    },
+    {
+      "formula_math": "R = R_0 (1 + \\alpha \\Delta T)",
+      "formula_english": "Temperature dependence of resistance."
+    },
+    {
+      "formula_math": "P = I V",
+      "formula_english": "Electric power."
+    },
+    {
+      "formula_math": "P = I^2 R",
+      "formula_english": "Power in terms of current and resistance."
+    },
+    {
+      "formula_math": "P = \\frac{V^2}{R}",
+      "formula_english": "Power in terms of voltage and resistance."
+    },
+    {
+      "formula_math": "I_{rms} = \\frac{I_0}{\\sqrt{2}}",
+      "formula_english": "Root-mean-square value of AC current."
+    },
+    {
+      "formula_math": "V_{rms} = \\frac{V_0}{\\sqrt{2}}",
+      "formula_english": "Root-mean-square value of AC voltage."
+    },
+    {
+      "formula_math": "P_{ave} = \\frac{1}{2} I_0 V_0",
+      "formula_english": "Average power of an AC signal."
+    }
+  ]
+}

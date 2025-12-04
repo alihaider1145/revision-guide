@@ -1,0 +1,45 @@
+{
+  "chapter": "13. Electromagnetism",
+  "formulas": [
+    {
+      "formula_math": "F = q v B \\sin \\theta",
+      "formula_english": "Magnetic force on a moving charge."
+    },
+    {
+      "formula_math": "r = \\frac{m v}{q B}",
+      "formula_english": "Radius of circular path of a charged particle in a magnetic field."
+    },
+    {
+      "formula_math": "\\epsilon = B l v",
+      "formula_english": "Motional emf induced in a conductor moving in a magnetic field."
+    },
+    {
+      "formula_math": "F = I L B \\sin \\theta",
+      "formula_english": "Force on a current-carrying conductor in a magnetic field."
+    },
+    {
+      "formula_math": "\\tau = N I A B \\sin \\theta",
+      "formula_english": "Torque on a current loop in a magnetic field."
+    },
+    {
+      "formula_math": "B = \\frac{\\mu_0 I}{2 \\pi r}",
+      "formula_english": "Magnetic field due to a long straight wire."
+    },
+    {
+      "formula_math": "B = \\frac{\\mu_0 I}{2 R}",
+      "formula_english": "Magnetic field at the center of a circular current loop."
+    },
+    {
+      "formula_math": "B = \\mu_0 n I",
+      "formula_english": "Magnetic field inside a solenoid."
+    },
+    {
+      "formula_math": "\\frac{F}{l} = \\frac{\\mu_0 I_1 I_2}{2 \\pi r}",
+      "formula_english": "Force per unit length between two parallel current-carrying wires."
+    },
+    {
+      "formula_math": "B = \\oint \\vec{B} \\cdot d\\vec{l} = \\mu_0 I_{enclosed}",
+      "formula_english": "Ampère’s law (integral form)."
+    }
+  ]
+}

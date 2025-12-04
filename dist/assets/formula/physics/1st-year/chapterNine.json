@@ -1,0 +1,71 @@
+{
+  "chapter": "9. Physical Optics",
+  "formulas": [
+    {
+      "formula_math": "I = I_0 \\cos^2 \\theta",
+      "formula_english": "Malus law for polarization: transmitted intensity."
+    },
+    {
+      "formula_math": "I = \\frac{1}{2} I_0",
+      "formula_english": "Intensity after passing through an ideal polarizer (unpolarized light)."
+    },
+    {
+      "formula_math": "\\tan \\theta_B = \\frac{n_2}{n_1}",
+      "formula_english": "Brewster’s angle for polarization by reflection."
+    },
+
+    {
+      "formula_math": "y_m = m \\frac{\\lambda D}{d}",
+      "formula_english": "Position of bright fringes in Young’s double-slit experiment.",
+      "variants": [
+        "m = 0, 1, 2, ... (bright fringes)"
+      ]
+    },
+    {
+      "formula_math": "y_m = (m + \\frac{1}{2}) \\frac{\\lambda D}{d}",
+      "formula_english": "Position of dark fringes in double-slit.",
+      "variants": [
+        "m = 0, 1, 2, ... (dark fringes)"
+      ]
+    },
+    {
+      "formula_math": "\\beta = \\frac{\\lambda D}{d}",
+      "formula_english": "Fringe spacing (fringe width) in double-slit interference."
+    },
+
+    {
+      "formula_math": "d \\sin \\theta = m \\lambda",
+      "formula_english": "Diffraction grating (principal maxima condition)."
+    },
+    {
+      "formula_math": "\\sin \\theta = m \\frac{\\lambda}{W}",
+      "formula_english": "Diffraction by single slit: minima positions (W = slit width)."
+    },
+    {
+      "formula_math": "\\theta = 1.22 \\frac{\\lambda}{D}",
+      "formula_english": "Angular resolution limit (Rayleigh criterion)."
+    },
+
+    {
+      "formula_math": "2t = \\frac{\\lambda}{2}",
+      "formula_english": "Thin film interference: condition for destructive interference (normal incidence)."
+    },
+    {
+      "formula_math": "2t = \\lambda",
+      "formula_english": "Thin film interference: condition for constructive interference (normal incidence)."
+    },
+    {
+      "formula_math": "2t = m \\lambda",
+      "formula_english": "General constructive condition (multiple orders)."
+    },
+    {
+      "formula_math": "2t = \\left(m + \\frac{1}{2}\\right) \\lambda",
+      "formula_english": "General destructive condition (multiple orders)."
+    },
+
+    {
+      "formula_math": "\\lambda_n = \\frac{\\lambda}{n}",
+      "formula_english": "Wavelength in a medium with refractive index n."
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "chapter": "6. Fluid Dynamics",
+  "formulas": [
+    {
+      "formula_math": "Q = \\frac{V}{t}",
+      "formula_english": "Volume flow rate."
+    },
+    {
+      "formula_math": "Q = A v",
+      "formula_english": "Flow rate equals cross-sectional area times velocity."
+    },
+    {
+      "formula_math": "A_1 v_1 = A_2 v_2",
+      "formula_english": "Equation of continuity (incompressible flow)."
+    },
+    {
+      "formula_math": "P_1 + \\frac{1}{2} \\rho v_1^2 + \\rho g h_1 = P_2 + \\frac{1}{2} \\rho v_2^2 + \\rho g h_2",
+      "formula_english": "Bernoulli’s equation for ideal fluid flow."
+    },
+    {
+      "formula_math": "P + \\frac{1}{2} \\rho v^2 + \\rho g h = \\text{constant}",
+      "formula_english": "Bernoulli’s principle (general form)."
+    },
+    {
+      "formula_math": "v = \\sqrt{2 g h}",
+      "formula_english": "Torricelli’s law (speed of efflux)."
+    },
+    {
+      "formula_math": "\\eta = \\frac{F L}{A v}",
+      "formula_english": "Viscosity definition for laminar flow."
+    },
+    {
+      "formula_math": "Q = \\frac{P_2 - P_1}{R}",
+      "formula_english": "Flow rate using fluid resistance."
+    },
+    {
+      "formula_math": "R = \\frac{8 \\eta l}{\\pi r^4}",
+      "formula_english": "Fluid resistance in laminar flow (Poiseuille’s law)."
+    },
+    {
+      "formula_math": "Q = \\frac{(P_2 - P_1) \\pi r^4}{8 \\eta l}",
+      "formula_english": "Poiseuille’s equation for laminar flow in a pipe."
+    },
+    {
+      "formula_math": "N_R = \\frac{2 \\rho v r}{\\eta}",
+      "formula_english": "Reynolds number (laminar/turbulent flow criterion)."
+    },
+    {
+      "formula_math": "x_{rms} = \\sqrt{2 D t}",
+      "formula_english": "Root-mean-square displacement in diffusion."
+    }
+  ]
+}

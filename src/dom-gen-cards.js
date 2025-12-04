@@ -1,7 +1,9 @@
-export default function populateCard(data){
-    data.formulas.forEach(formula => {
+function populateCard(formula, topic){
+    if(topic === 'formula'){
+        console.log("Populating Formula Card");
         const card = document.createElement('div');
         card.classList.add('formula__card');
+
         const cardEng = document.createElement('div');
         cardEng.classList.add('card__eng');
         cardEng.textContent = formula.formula_english;
@@ -9,7 +11,7 @@ export default function populateCard(data){
 
         const cardMath = document.createElement('div');
         cardMath.classList.add('card__math');
-        cardMath.textContent = formula.formula_math;
+        cardMath.innerHTML = `$$${formula.formula_math}$$`;
         card.appendChild(cardMath);
 
         if(formula.similar){
@@ -23,7 +25,12 @@ export default function populateCard(data){
             const cardVariants = document.createElement('div');
             cardVariants.classList.add('card__variation');
             cardVariants.textContent = formula.variants;
+            card.appendChild(cardVariants);
         }
 
-    });
+        console.log("Formula Card Populated");
+        return card;
+    };
 } 
+
+export { populateCard };
