@@ -1,0 +1,48 @@
+{
+  "chapter": "1. Measurement",
+  "formulas": [
+    {
+      "formula_math": "L.C. = \\text{Value of one main scale division} \\;/\\; \\text{Number of vernier divisions}",
+      "formula_english": "Least count formula for vernier-type instruments.",
+      "variants": [
+        "For screw gauge: L.C. = pitch / number_of_divisions"
+      ]
+    },
+    {
+      "formula_math": "E = |\\text{True value} - \\text{Measured value}|",
+      "formula_english": "Absolute error."
+    },
+    {
+      "formula_math": "\\delta x = \\frac{E}{x}",
+      "formula_english": "Fractional error."
+    },
+    {
+      "formula_math": "\\%\\text{Error} = \\left(\\frac{E}{x}\\right) \\times 100",
+      "formula_english": "Percentage error."
+    },
+    {
+      "formula_math": "\\Delta z = \\Delta x + \\Delta y",
+      "formula_english": "Error addition rule for z = x + y or z = x − y."
+    },
+    {
+      "formula_math": "\\frac{\\Delta z}{z} = \\frac{\\Delta x}{x} + \\frac{\\Delta y}{y}",
+      "formula_english": "Fractional error for multiplication and division (z = xy or z = x / y)."
+    },
+    {
+      "formula_math": "\\frac{\\Delta z}{z} = n \\left( \\frac{\\Delta x}{x} \\right)",
+      "formula_english": "Fractional error for a power function (z = x^n)."
+    },
+    {
+      "formula_math": "z = x \\pm \\Delta x",
+      "formula_english": "General representation of measured values with uncertainty."
+    },
+    {
+      "formula_math": "x = a \\times 10^n",
+      "formula_english": "Scientific notation representation of a number."
+    },
+    {
+      "formula_math": "n = \\log_{10}(x)",
+      "formula_english": "Logarithmic form used in scientific notation and data scaling."
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "chapter": "4. Work and Energy",
+  "formulas": [
+    {
+      "formula_math": "W = F d \\cos \\theta",
+      "formula_english": "Work done by a force at an angle."
+    },
+    {
+      "formula_math": "KE = \\frac{1}{2} m v^2",
+      "formula_english": "Kinetic energy of a moving body."
+    },
+    {
+      "formula_math": "W_{net} = \\frac{1}{2} m v_f^2 - \\frac{1}{2} m v_0^2",
+      "formula_english": "Work–energy theorem."
+    },
+    {
+      "formula_math": "PE_g = m g h",
+      "formula_english": "Gravitational potential energy."
+    },
+    {
+      "formula_math": "PE_s = \\frac{1}{2} k x^2",
+      "formula_english": "Elastic potential energy stored in a spring."
+    },
+    {
+      "formula_math": "KE_0 + PE_0 = KE_f + PE_f",
+      "formula_english": "Conservation of mechanical energy (no non-conservative forces)."
+    },
+    {
+      "formula_math": "KE_0 + PE_0 + W_{nc} = KE_f + PE_f",
+      "formula_english": "Mechanical energy with non-conservative work included.",
+      "variants": [
+        "W_{nc} often represents work done by friction or air resistance"
+      ]
+    },
+    {
+      "formula_math": "P = \\frac{W}{t}",
+      "formula_english": "Power is the rate of doing work."
+    },
+    {
+      "formula_math": "P = F v",
+      "formula_english": "Instantaneous power for a constant force and velocity.",
+      "similar": [
+        "Useful when force is applied in direction of motion"
+      ]
+    },
+    {
+      "formula_math": "Eff = \\frac{W_{out}}{E_{in}}",
+      "formula_english": "Efficiency of a machine."
+    }
+  ]
+}

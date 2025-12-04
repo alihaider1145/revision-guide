@@ -1,0 +1,60 @@
+{
+  "chapter": "11. Electrostatics",
+  "formulas": [
+    {
+      "formula_math": "F = k \\frac{|q_1 q_2|}{r^2}",
+      "formula_english": "Coulomb’s law for electrostatic force between two point charges."
+    },
+    {
+      "formula_math": "E = \\frac{F}{q}",
+      "formula_english": "Electric field defined as force per unit charge."
+    },
+    {
+      "formula_math": "E = k \\frac{Q}{r^2}",
+      "formula_english": "Electric field due to a point charge."
+    },
+    {
+      "formula_math": "E = k \\frac{Q}{r^2} \\, \\hat{r}",
+      "formula_english": "Vector form of electric field of a point charge."
+    },
+    {
+      "formula_math": "E_{net} = \\sum E_i",
+      "formula_english": "Superposition principle for electric fields."
+    },
+    {
+      "formula_math": "F_{net} = \\sum F_i",
+      "formula_english": "Superposition principle for electrostatic forces."
+    },
+    {
+      "formula_math": "E = \\frac{\\sigma}{2\\varepsilon_0}",
+      "formula_english": "Electric field due to an infinite charged sheet.",
+      "variants": [
+        "Above and below the sheet: same magnitude, opposite direction"
+      ]
+    },
+    {
+      "formula_math": "E = \\frac{kQ}{r^2} \\quad (\\text{outside a uniformly charged sphere})",
+      "formula_english": "Electric field outside a charged solid or hollow sphere behaves as a point charge."
+    },
+    {
+      "formula_math": "E = 0 \\quad (\\text{inside a hollow charged sphere})",
+      "formula_english": "Electric field inside a conductor/shell in electrostatic equilibrium."
+    },
+    {
+      "formula_math": "\\Phi = E A \\cos \\theta",
+      "formula_english": "Electric flux through a flat surface."
+    },
+    {
+      "formula_math": "\\Phi = \\oint \\vec{E} \\cdot d\\vec{A}",
+      "formula_english": "General definition of electric flux."
+    },
+    {
+      "formula_math": "\\oint \\vec{E} \\cdot d\\vec{A} = \\frac{Q_{enclosed}}{\\varepsilon_0}",
+      "formula_english": "Gauss’s law."
+    },
+    {
+      "formula_math": "E = \\frac{Q}{\\varepsilon_0 A}",
+      "formula_english": "Electric field between two oppositely charged parallel plates."
+    }
+  ]
+}
