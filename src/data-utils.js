@@ -1,5 +1,5 @@
-const getFetchURL = async (topic, subject, grade, chapter) => {
-    return  `/assets/${topic}/${subject}/${grade}/${chapter}.json`;
+const getFetchURL = async (subject, grade, topic, chapter) => {
+    return  `/assets/${subject}/${grade}/${topic}/${chapter}.json`;
 }
 
 const  fetchData = async (jsonFilePath) => {
