@@ -29,7 +29,7 @@ body{
 -------------------- */
 
 .hidden{
-    display: none;
+    display: none !important;
 }
 
 .btn{
@@ -38,39 +38,13 @@ body{
     cursor: pointer;
     background-color: var(--button-color);
     color: var(--text-color);
-    margin: 8px;
-    padding: 8px 16px;
-}
+    padding: 16px;
 
-.btn--subject{
     font-size: 1.6rem;
     font-weight: 600;
     width: 100%;
     margin: 8px 0;
     /* width: calc(100% / 2 - 10px); */
-    padding-block: 16px;
-}
-
-.btn--subject:first-of-type{
-    margin-left: 0;
-}
-
-.btn--subject:last-of-type{
-    margin-right: 0;
-}
-
-.btn--grade{
-    background-color: var(--bg-color);
-    color: var(--text-color);
-    font-size: 1.6rem;
-    font-weight: 600;
-}
-
-.btn--topic{
-    color: var(--text-secondary-color);
-    font-weight: 600;
-    margin: 0;
-    font-size: 1.6rem;
 }
 
 .btn:hover{
@@ -99,23 +73,28 @@ body{
     min-width: 410px;
     margin: auto;
 
-    margin-top: calc(100vh/2 - 200px);
 }
 
 /* -----------------
 ---------------grade
 -------------------- */
 
+.grade{
+    width: 80vw;
+    min-width: 410px;
+    margin: auto;
+
+}
+
 /* -----------------
 --------------topics
 -------------------- */
 
 .topic{
-    background-color: var(--button-color);
-    border-radius: 8px;
     width: 80vw;
     min-width: 410px;
-    margin: 0 auto;
+    margin: auto;
+
 }
 
 /* -----------------
@@ -132,13 +111,6 @@ body{
     grid-column: span 2;
 }
 
-.chapter{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(auto-fill, minmax(100px, 1fr));
-    gap: 32px;
-}
-
 .formula__card{
     background-color: var(--card-color);
     overflow-y: hidden;
@@ -153,6 +125,23 @@ body{
 
 .card__eng{
     font-weight: 600;;
+}
+
+/* -----------------
+-------------chapter
+-------------------- */
+
+.chapter{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    width: 80vw;
+    margin: auto;
+}
+
+.chapter__btn{
+    height: 90px;
+    margin: 0;
 }
 
 /* -----------------

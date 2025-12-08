@@ -1,39 +1,21 @@
-async function countTotalChapters(subject, grade, topic){
-    const owener = "alihaider1145";
-    const repo = "formula-guide";
-    const directoryPath = `src/assets/${topic}/${subject}/${grade}/`;
+import { countFiles, getFetchURL } from "./data-utils.js";
+import { chapterBtnFunc } from "./dom-buttons.js";
 
-    const apiUrl = `api.github.com{owner}/${repo}/contents/${directoryPath}`;
-
-    try {
-        const response = await fetch(apiUrl);
-
-        if (!response.ok) {
-            throw new Error(`GitHub API error: ${response.statusText}`);
-        }
-
-        const contents = await response.json();
-
-        const jsonFiles = contents.filter(item => {
-            return item.type === 'file' && item.name.toLowerCase().endsWith('.json');
-        });
-
-        const count = jsonFiles.length;
-        return count;
-
-    } catch (error) {
-        console.error("Could not fetch repository contents:", error);
-        alert(error.message);
-    }
+async function countTotalChapters(subject, grade, topic) {
+    const jsonFilePath = await getFetchURL(subject, grade, topic, "index");
+    const totalChapters = await countFiles(jsonFilePath);
+    return totalChapters;
 }
 
-function genChapterBtns(totalChapters){
-    let num = ["one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten"];
-    for (let i = 1; i <= totalChapters; i++) {
+async function genChapterBtns(totalChapters){
+    let num = ["one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten", "eleven", "twelve", "thirteen", "fourteen", "fifteen", "sixteen", "seventeen", "eighteen", "nineteen", "twenty"];
+    for (let i = 0; i < (await totalChapters); i++) {
         const chapterBtn = document.createElement("button");
-        chapterBtn.classList.add("chapter__btn");
-        chapterBtn.textContent = `Chapter ${num[i-1]}`;
+        chapterBtn.classList.add("chapter__btn", "btn");
+        chapterBtn.textContent = `Chapter ${num[i]}`;
         document.querySelector(".chapter").appendChild(chapterBtn);
+
+        chapterBtn.addEventListener("click", chapterBtnFunc)
     }
 }
 
