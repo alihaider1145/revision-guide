@@ -1,0 +1,13 @@
+{
+  "chapter": "15. Alternating Current",
+  "constants": [
+    {
+      "const_eng": "π constant (core for ω = 2πf)",
+      "const_math": "π = 3.1416"
+    },
+    {
+      "const_eng": "Permeability of free space (inductive reactance reference)",
+      "const_math": "μ₀ = 4π × 10^-7 H/m"
+    }
+  ]
+}
