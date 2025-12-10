@@ -48,4 +48,60 @@ import { fetchData, getFetchURL } from "./data-utils.js";
         let constantsData = await fetchData(await getFetchURL("physics", "2nd-year", "constants", `chapter-${number}`));
         genConstantCards(constantsData, number, "2nd-year");
     }
+
+
+    //maths ---------------->
+
+    //definitions -------->
+    //1st-year
+    for(const number of num){
+        let formulaData = await fetchData(await getFetchURL("maths", "1st-year", "definition", `chapter-${number}`));
+        genFormulaCards(formulaData, number, "1st-year");
+    }
+
+    //2nd-year
+    for(const number of num){
+        let formulaData = await fetchData(await getFetchURL("maths", "2nd-year", "definition", `chapter-${number}`));
+        genFormulaCards(formulaData, number, "2nd-year");
+    }
+
+    // //formula ---------->
+    // //1st-year
+    // for(const number of num){
+    //     let unitsData = await fetchData(await getFetchURL("maths", "1st-year", "equation", `chapter-${number}`));
+    //     genUnitCards(unitsData, number, "1st-year");
+    // }
+
+    // //2nd-year
+    // for(const number of num){
+    //     let unitsData = await fetchData(await getFetchURL("maths", "2nd-year", "equation", `chapter-${number}`));
+    //     genUnitCards(unitsData, number, "2nd-year");
+    // }
+
+    // //properties -------->
+    // //1st-year
+    // for(const number of num){
+    //     let constantsData = await fetchData(await getFetchURL("maths", "1st-year", "properties", `chapter-${number}`));
+    //     genConstantCards(constantsData, number, "1st-year");
+    // }
+
+    // //2nd-year
+    // for(const number of num){
+    //     let constantsData = await fetchData(await getFetchURL("maths", "2nd-year", "properties", `chapter-${number}`));
+    //     genConstantCards(constantsData, number, "2nd-year");
+    // }
+
+    // //theorem -------->
+    // //1st-year
+    // for(const number of num){
+    //     let constantsData = await fetchData(await getFetchURL("maths", "1st-year", "theorem", `chapter-${number}`));
+    //     genConstantCards(constantsData, number, "1st-year");
+    // }
+
+    // //2nd-year
+    // for(const number of num){
+    //     let constantsData = await fetchData(await getFetchURL("maths", "2nd-year", "theorem", `chapter-${number}`));
+    //     genConstantCards(constantsData, number, "2nd-year");
+    // }
+
 })();

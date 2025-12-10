@@ -8,6 +8,10 @@ const grade2ndYrBtn = document.querySelector(".grade__2ndyr-btn");
 const topicFormulasBtn = document.querySelector(".topic__formulas-btn");
 const topicConstantsBtn = document.querySelector(".topic__constants-btn");
 const topicUnitsBtn = document.querySelector(".topic__units-btn");
+const topicDefinitionBtn = document.querySelector(".topic__definition-btn");
+const topicEquationBtn = document.querySelector(".topic__equation-btn");
+const topicPropertiesBtn = document.querySelector(".topic__properties-btn");
+const topicTheoremBtn = document.querySelector(".topic__theorem-btn");
 const backBtn = document.querySelector(".back-btn");
 let chapterBtns = [];
 const chapterWrapper = document.querySelector(".chapter-wrapper");
@@ -40,16 +44,25 @@ function transitionGrade(action){
 
 function transitionTopic(action){
     if(action === "hide"){
-        topicFormulasBtn.parentElement.parentElement.classList.add("hidden");
+        if(subject === "physics"){
+            topicFormulasBtn.parentElement.classList.add("hidden");
+        }
+        else if(subject === "maths"){
+            topicDefinitionBtn.parentElement.classList.add("hidden");
+        }
     }
     else if(action === 'show'){
-        topicFormulasBtn.parentElement.parentElement.classList.remove("hidden");
+        if(subject === "physics"){
+            topicFormulasBtn.parentElement.classList.remove("hidden");
+        }
+        else if(subject === "maths"){
+            topicDefinitionBtn.parentElement.classList.remove("hidden");
+        }
     }
 }
 
 function chapterBtnFunc(event){
     chapter = event.target.textContent.split(" ").join("-").toLowerCase();
-    console.log("checkpoint 2");
     document.querySelector(".chapter-wrapper").classList.add("hidden");
     document.querySelector(`.${topic}__${grade}__${chapter}`).classList.remove("hidden");
 }
@@ -101,7 +114,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
     topicFormulasBtn.addEventListener("click", () => {
         topic = "formula";
-        console.log("checkpoint 1");
         transitionTopic("hide");
         genChapterBtns(countTotalChapters(subject, grade, topic));
         chapterBtns = document.querySelectorAll(".chapter__btn");
@@ -111,7 +123,38 @@ document.addEventListener("DOMContentLoaded", () => {
     topicUnitsBtn.addEventListener("click", () => {
         topic = "unit";
         transitionTopic("hide");
-        console.log("checkpoint 1");
+        genChapterBtns(countTotalChapters(subject, grade, topic));
+        chapterBtns = document.querySelectorAll(".chapter__btn");
+        document.querySelector(".chapter-wrapper").classList.remove("hidden");
+    })
+
+    topicDefinitionBtn.addEventListener("click", () => {
+        topic = "definition";
+        transitionTopic("hide");
+        genChapterBtns(countTotalChapters(subject, grade, topic));
+        chapterBtns = document.querySelectorAll(".chapter__btn");
+        document.querySelector(".chapter-wrapper").classList.remove("hidden");
+    })
+
+    topicEquationBtn.addEventListener("click", () => {
+        topic = "equation";
+        transitionTopic("hide");
+        genChapterBtns(countTotalChapters(subject, grade, topic));
+        chapterBtns = document.querySelectorAll(".chapter__btn");
+        document.querySelector(".chapter-wrapper").classList.remove("hidden");
+    })
+
+    topicPropertiesBtn.addEventListener("click", () => {
+        topic = "properties";
+        transitionTopic("hide");
+        genChapterBtns(countTotalChapters(subject, grade, topic));
+        chapterBtns = document.querySelectorAll(".chapter__btn");
+        document.querySelector(".chapter-wrapper").classList.remove("hidden");
+    })
+
+    topicTheoremBtn.addEventListener("click", () => {
+        topic = "theorem";
+        transitionTopic("hide");
         genChapterBtns(countTotalChapters(subject, grade, topic));
         chapterBtns = document.querySelectorAll(".chapter__btn");
         document.querySelector(".chapter-wrapper").classList.remove("hidden");
