@@ -50,20 +50,20 @@ import { fetchData, getFetchURL } from "./data-utils.js";
     }
 
 
-    //maths ---------------->
+    // //maths ---------------->
 
-    //definitions -------->
-    //1st-year
-    for(const number of num){
-        let formulaData = await fetchData(await getFetchURL("maths", "1st-year", "definition", `chapter-${number}`));
-        genFormulaCards(formulaData, number, "1st-year");
-    }
+    // //definitions -------->
+    // //1st-year
+    // for(const number of num){
+    //     let formulaData = await fetchData(await getFetchURL("maths", "1st-year", "definition", `chapter-${number}`));
+    //     genFormulaCards(formulaData, number, "1st-year");
+    // }
 
-    //2nd-year
-    for(const number of num){
-        let formulaData = await fetchData(await getFetchURL("maths", "2nd-year", "definition", `chapter-${number}`));
-        genFormulaCards(formulaData, number, "2nd-year");
-    }
+    // //2nd-year
+    // for(const number of num){
+    //     let formulaData = await fetchData(await getFetchURL("maths", "2nd-year", "definition", `chapter-${number}`));
+    //     genFormulaCards(formulaData, number, "2nd-year");
+    // }
 
     // //formula ---------->
     // //1st-year
