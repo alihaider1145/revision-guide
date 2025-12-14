@@ -210,11 +210,11 @@ body{
         grid-template-columns: 1fr;
     }
 
-    .formula__card{
+    .formula__card, .unit__card, .constant__card{
         width: 100%;
     }
 
-    .formula__chapter-title{
+    .formula__chapter-title, .constants__chapter-title, .units__chapter-title{
         grid-column: span 1;
     }
 }
