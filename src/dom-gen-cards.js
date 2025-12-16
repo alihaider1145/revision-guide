@@ -58,6 +58,8 @@ function populateCard(topicList, topicName){
         card.appendChild(cardtopicUnit);
     }
 
+    
+
     return card;
 } 
 

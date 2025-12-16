@@ -177,14 +177,6 @@ document.addEventListener("DOMContentLoaded", () => {
         document.querySelector(".chapter-wrapper").classList.remove("hidden");
     })
 
-    topicTheoremBtn.addEventListener("click", () => {
-        topic = "theorems";
-        transitionTopic("hide");
-        genChapterBtns(countTotalChapters(subject, grade));
-        chapterBtns = document.querySelectorAll(".chapter__btn");
-        document.querySelector(".chapter-wrapper").classList.remove("hidden");
-    })
-
     backBtn.addEventListener("click", () => {
         if(chapter){
             document.querySelector(".chapter-wrapper").classList.remove("hidden");
