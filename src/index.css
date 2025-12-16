@@ -171,11 +171,11 @@ body{
         grid-template-columns: 1fr;
     }
 
-    .formulas__card, .unit__card, .constant__card{
+    .card{
         width: 100%;
     }
 
-    .formulas__chapter-title, .constants__chapter-title, .units__chapter-title{
+    .title{
         grid-column: span 1;
     }
 }
