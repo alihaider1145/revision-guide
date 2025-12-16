@@ -5,13 +5,18 @@ function populateCard(topicList, topicName){
         formula: "formula_english",
         constant: "const_eng",
         unit: "unit_eng",
-
+        definition: "definition_eng",
+        equation: "eq_eng",
+        properties: "prop_eng"
     }
 
     const mathMap = {
         formula: "formula_math",
         constant: "const_math",
-        unit: "unit_math"
+        unit: "unit_math",
+        definition: "definition_math",
+        equation: "eq_math",
+        properties: "prop_math"
     }
 
     const card = document.createElement('div');
@@ -35,6 +40,15 @@ function populateCard(topicList, topicName){
         cardMath.classList.add('card__math');
         cardMath.innerHTML = `\\(${topicList[mathMap[topicName]]}\\)`;
         card.appendChild(cardMath);
+    }
+
+    if(topicList.term){
+        const cardTerm = document.createElement('div');
+        cardTerm.classList.add('card__term');
+        cardTerm.textContent = topicList.term;
+        cardTerm.style.fontWeight = "600";
+        cardEng.style.fontWeight = "400";
+        card.prepend(cardTerm);
     }
 
     if(topicList.similar){

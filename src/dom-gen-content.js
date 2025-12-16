@@ -13,10 +13,12 @@ function genContentCards(data, number, grade, topic) {
 
     const items = data[topic];
 
+    console.log(items);
+    console.log(data);
     // Iterate through each content type for the subject
     if (items && Array.isArray(items)) {
         for (const item of items) {
-            const cardType = `${topic.slice(0, -1)}`; // Remove plural 's'
+            const cardType = (topic === "properties") ? (topic) : (`${topic.slice(0, -1)}`); // Remove plural 's'
             chapterDiv.appendChild(populateCard(item, cardType));
         }
     }

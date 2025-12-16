@@ -82,10 +82,6 @@ async function chapterBtnFunc(event){
         // Generate cards based on topic type
         genContentCards(data, chapterNum, grade, topic);
 
-        // Add maths topics when you uncomment them
-        // else if (topic === "definition") { genDefinitionCards(data, chapterNum, grade); }
-        // ... etc
-
         contentContainer = document.querySelector(`.${topic}__${grade}__${chapter}`);
     }
     
