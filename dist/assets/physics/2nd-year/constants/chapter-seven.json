@@ -1,17 +1,29 @@
 {
-  "chapter": "16. Physics of Solids",
+  "chapter": "7. Electronics",
   "constants": [
     {
-      "const_eng": "Young’s modulus typical range (solids)",
-      "const_math": "E ≈ 10^9 to 10^12 Pa"
+      "const_eng": "Charge of an electron",
+      "const_math": "e = 1.6 × 10^-19 C"
     },
     {
-      "const_eng": "Density of solids (general reference)",
-      "const_math": "ρ ≈ 2000 to 8000 kg/m^3"
+      "const_eng": "Energy band gap of silicon",
+      "const_math": "E_g ≈ 1.1 eV"
     },
     {
-      "const_eng": "Avogadro’s number (for molecular solid calculations)",
-      "const_math": "N_A = 6.02 × 10^23 mol^-1"
+      "const_eng": "Energy band gap of germanium",
+      "const_math": "E_g ≈ 0.7 eV"
+    },
+    {
+      "const_eng": "Thermal voltage at room temperature",
+      "const_math": "V_T ≈ 0.026 V"
+    },
+    {
+      "const_eng": "Forward voltage drop of silicon diode",
+      "const_math": "V_f ≈ 0.7 V"
+    },
+    {
+      "const_eng": "Forward voltage drop of germanium diode",
+      "const_math": "V_f ≈ 0.3 V"
     }
   ]
 }

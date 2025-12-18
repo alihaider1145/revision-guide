@@ -2,73 +2,72 @@
   "chapter": "17. Electronics",
   "formulas": [
     {
-      "formula_math": "I = I_0 \\left( e^{\\frac{V}{\\eta V_T}} - 1 \\right)",
-      "formula_english": "Diode current–voltage (ideal diode equation)."
+      "formula_math": "I_E = I_B + I_C",
+      "formula_english": "Current relation in transistor."
     },
     {
-      "formula_math": "V_{out} = V_{in} \\frac{R_2}{R_1 + R_2}",
-      "formula_english": "Voltage divider formula."
+      "formula_math": "\\alpha = \\frac{I_C}{I_E}",
+      "formula_english": "Current amplification factor (alpha)."
     },
     {
-      "formula_math": "A_v = - \\frac{R_f}{R_{in}}",
-      "formula_english": "Inverting amplifier gain (op-amp)."
+      "formula_math": "\\beta = \\frac{I_C}{I_B}",
+      "formula_english": "Current gain (beta)."
     },
     {
-      "formula_math": "A_v = 1 + \\frac{R_f}{R_{in}}",
-      "formula_english": "Non-inverting amplifier gain (op-amp)."
+      "formula_math": "\\beta = \\frac{\\alpha}{1 - \\alpha}",
+      "formula_english": "Relation between alpha and beta."
+    },
+    {
+      "formula_math": "\\alpha = \\frac{\\beta}{1 + \\beta}",
+      "formula_english": "Alpha in terms of beta."
     },
     {
       "formula_math": "A_v = \\frac{V_{out}}{V_{in}}",
-      "formula_english": "Voltage gain definition."
+      "formula_english": "Voltage gain of amplifier."
     },
     {
-      "formula_math": "Z_{in} = \\infty, \\quad Z_{out} = 0",
-      "formula_english": "Ideal op-amp input/output impedance assumptions."
-    },
-
-    {
-      "formula_math": "V_Z \\approx \\text{constant}",
-      "formula_english": "Zener diode maintains nearly constant voltage in breakdown region."
+      "formula_math": "A_i = \\frac{I_{out}}{I_{in}}",
+      "formula_english": "Current gain of amplifier."
     },
     {
-      "formula_math": "I_L = \\frac{V_Z}{R_L}",
-      "formula_english": "Load current in Zener regulator."
-    },
-
-    {
-      "formula_math": "f_c = \\frac{1}{2 \\pi R C}",
-      "formula_english": "Cutoff frequency of RC filters (low-pass / high-pass)."
+      "formula_math": "A_p = A_v \\times A_i",
+      "formula_english": "Power gain of amplifier."
     },
     {
-      "formula_math": "X_C = \\frac{1}{2 \\pi f C}",
-      "formula_english": "Capacitive reactance (used in AC circuits and filters)."
-    },
-
-    {
-      "formula_math": "f = \\frac{1}{2 \\pi R C}",
-      "formula_english": "General RC time-constant frequency relation."
+      "formula_math": "V_{out} = A_v V_{in}",
+      "formula_english": "Output voltage of amplifier."
     },
     {
-      "formula_math": "\\tau = R C",
-      "formula_english": "Time constant of an RC circuit."
-    },
-
-    {
-      "formula_math": "Q = C V",
-      "formula_english": "Charge stored in a capacitor."
+      "formula_math": "I_C = \\beta I_B",
+      "formula_english": "Collector current in terms of base current."
     },
     {
-      "formula_math": "E = \\frac{1}{2} C V^2",
-      "formula_english": "Energy stored in a capacitor."
-    },
-
-    {
-      "formula_math": "I(t) = I_0 e^{-t/RC}",
-      "formula_english": "Decay of current/voltage in a discharging capacitor."
+      "formula_math": "V_{CE} = V_{CC} - I_C R_C",
+      "formula_english": "Collector-emitter voltage."
     },
     {
-      "formula_math": "V(t) = V_0 (1 - e^{-t/RC})",
-      "formula_english": "Voltage rise across a charging capacitor."
+      "formula_math": "I_D = I_{DSS} \\left(1 - \\frac{V_{GS}}{V_P}\\right)^2",
+      "formula_english": "Drain current in JFET."
+    },
+    {
+      "formula_math": "g_m = \\frac{\\Delta I_D}{\\Delta V_{GS}}",
+      "formula_english": "Transconductance of FET."
+    },
+    {
+      "formula_math": "f_c = \\frac{1}{2\\pi RC}",
+      "formula_english": "Cut-off frequency of filter."
+    },
+    {
+      "formula_math": "Y = A + B",
+      "formula_english": "OR gate logic."
+    },
+    {
+      "formula_math": "Y = A \\cdot B",
+      "formula_english": "AND gate logic."
+    },
+    {
+      "formula_math": "Y = \\overline{A}",
+      "formula_english": "NOT gate logic."
     }
   ]
 }
