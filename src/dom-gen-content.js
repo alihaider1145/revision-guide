@@ -1,5 +1,6 @@
 import { populateCard } from "./dom-gen-cards.js";
 
+//TODO: add the logic for units/constants (no chapters)
 // Generates cards for one chapter based on subject type
 function genContentCards(data, number, grade, topic) {
     const chapterDiv = document.createElement('div');
