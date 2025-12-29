@@ -1,9 +1,16 @@
 const dataCache = new Map();
 
+//TODO-done: refactor URL for units/constants (no chapters)
 const getFetchURL = (subject, grade, topic, chapter) => {
     const owner = "alihaider1145";
     const repo = "formula-guide";
-    const directoryPath = `dist/assets/${subject}/${grade}/${topic}/${chapter}.json`;
+    let directoryPath;
+    if(chapter){
+        directoryPath = `dist/assets/${subject}/${grade}/${topic}/${chapter}.json`;
+    }
+    else{
+        directoryPath = `dist/assets/${subject}/${grade}/${topic}/${topic}.json`;
+    }
     
     return `https://raw.githubusercontent.com/${owner}/${repo}/main/${directoryPath}`;
 }
@@ -21,7 +28,11 @@ const fetchData = async (subject, grade, topic, chapter) => {
         return dataCache.get(cacheKey);
     }
     
-    
+    if(!chapter){
+        console.log(`🌐 Fetching from network: ${cacheKey}`);
+        const url = getFetchURL(subject, grade, topic);
+    }
+
     console.log(`🌐 Fetching from network: ${cacheKey}`);
     const url = getFetchURL(subject, grade, topic, chapter);
     

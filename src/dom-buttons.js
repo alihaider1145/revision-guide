@@ -62,6 +62,7 @@ function transitionTopic(action){
     }
 }
 
+//TODO-done(NR): add the logic for units/constants (no chapters)
 async function chapterBtnFunc(event){
     chapter = event.target.textContent.split(" ").join("-").toLowerCase();
 
@@ -125,11 +126,12 @@ document.addEventListener("DOMContentLoaded", () => {
         transitionGrade("hide");
     })
 
-    topicConstantsBtn.addEventListener("click", () => {
+    //TODO-done: directly create the content cards, instead of chapter btns
+    topicConstantsBtn.addEventListener("click", async () => {
         topic = "constants";
         transitionTopic("hide");
-        genChapterBtns(countTotalChapters(subject, grade));
-        chapterBtns = document.querySelectorAll(".chapter__btn");
+        const data = await fetchData(subject, grade, topic);
+        genContentCards(data, grade, topic); //here
         document.querySelector(".chapter-wrapper").classList.remove("hidden");
     })
 
@@ -141,11 +143,12 @@ document.addEventListener("DOMContentLoaded", () => {
         document.querySelector(".chapter-wrapper").classList.remove("hidden");
     })
 
-    topicUnitsBtn.addEventListener("click", () => {
+    //TODO-done: directly create the content cards, instead of chapter btns
+    topicUnitsBtn.addEventListener("click", async () => {
         topic = "units";
         transitionTopic("hide");
-        genChapterBtns(countTotalChapters(subject, grade));
-        chapterBtns = document.querySelectorAll(".chapter__btn");
+        const data = await fetchData(subject, grade, topic);
+        genContentCards(data, grade, topic); //here
         document.querySelector(".chapter-wrapper").classList.remove("hidden");
     })
 

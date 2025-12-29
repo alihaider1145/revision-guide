@@ -1,5 +1,4 @@
 function populateCard(topicList, topicName){
-    //add engMap and mathMap for math topics
     
     const engMap = {
         formula: "formula_english",
@@ -77,4 +76,4 @@ function populateCard(topicList, topicName){
     return card;
 } 
 
-export { populateCard };
+export {populateCard};
