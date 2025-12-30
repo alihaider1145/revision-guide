@@ -1,6 +1,5 @@
 import "./index.css";
-import "./dom-buttons.js"
-
+import { subjectHandler, gradeHandler, topicHandler, chapterHandler, backBtnHandler, contentHandler } from "./event-handlers";
 
 // Register Service Worker for offline capability
 if ('serviceWorker' in navigator) {
@@ -15,3 +14,10 @@ if ('serviceWorker' in navigator) {
       });
   });
 }
+
+document.querySelector(".subject").addEventListener("click", subjectHandler);
+document.querySelector(".grade").addEventListener("click", gradeHandler);
+document.querySelector(".topic").addEventListener("click", topicHandler);
+document.querySelector(".chapter").addEventListener("click", chapterHandler);
+document.querySelector(".back-btn").addEventListener("click", backBtnHandler);
+document.querySelector(".content").addEventListener("click", contentHandler);
