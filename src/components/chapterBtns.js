@@ -8,8 +8,6 @@ function genChapterBtns(){
     for(let i = 0; i < globalState.getState()[`${subj}Chapter`][grade]; i++){
         const chapterBtn = createEle("button", `Chapter ${num[i]}`, document.querySelector(".chapter"));
         chapterBtn.classList.add("chapter__btn", "btn");
-        console.log(chapterBtn);
-        console.log(chapterBtn.parentElement);
     }
 
     return document.querySelectorAll(".chapter__btn");
